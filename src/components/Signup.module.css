@@ -1,0 +1,163 @@
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.uncompleted {
+  width: 300px;
+  height: 30px;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 0 10px;
+  transition: all 0.3s;
+}
+
+.container input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid blue;
+  outline: none;
+}
+
+.container input[type="checkbox"]:checked {
+  background-color: blue;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.formContainer {
+  border: 1px solid rgb(131, 131, 131);
+  border-radius: 15px;
+  padding: 50px;
+  margin: 50px;
+  width: fit-content;
+}
+
+.headerContainer {
+  width: fit-content;
+  margin-bottom: 40px;
+}
+
+.headerContainer h2 {
+  height: 10px;
+  line-height: 10px;
+  font-size: 1.8rem;
+  color: blue;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 75px;
+  transition: all 0.3s;
+}
+
+.formInput {
+  width: 300px;
+  height: 30px;
+  outline: 1px solid #696969;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  transition: border 0.3s;
+}
+
+.uncompleted:focus,
+.formInput:focus {
+  height: 30px;
+  line-height: 30px;
+  outline: none;
+  border: 1px solid blue;
+  transition: border 0.3s;
+}
+
+.formField label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.formField span {
+  font-size: 0.7rem;
+  height: 15px;
+  line-height: 10px;
+  margin-top: 5px;
+  color: red;
+  width: fit-content;
+  padding: 3px 2px;
+  border-radius: 3px;
+  text-align: left;
+  background-color: rgb(255, 0, 0, 0.175);
+}
+
+.formField:nth-child(6) label {
+  color: blue;
+}
+
+/* .formField:nth-child(6) input {
+  outline: none;
+} */
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  height: 20px;
+  text-align: center;
+}
+
+.checkboxContainer label {
+  flex-grow: 1;
+}
+
+.checkboxContainer input {
+  flex-grow: 0;
+  width: auto;
+  margin: 0 5px;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formButtons a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.formButtons a:visited {
+  color: blue;
+}
+
+.formButtons button {
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.formButtons button:hover {
+  background-color: rgb(0, 0, 189);
+}
+
+.formButtons a:hover {
+  color: rgb(0, 0, 189);
+}
