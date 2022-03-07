@@ -41,7 +41,7 @@ export default function Login() {
     e.preventDefault();
 
     if (Object.keys(errors).length) {
-      notify("Ridi azizam !", "error");
+      notify("Failed !", "error");
       setFocus({
         email: true,
         password: true,

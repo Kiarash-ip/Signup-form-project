@@ -41,7 +41,7 @@ export default function SignUp() {
     e.preventDefault();
 
     if (Object.keys(errors).length) {
-      notify("Ridi azizam !", "error");
+      notify("Failed !", "error");
       setFocus({
         name: true,
         email: true,
